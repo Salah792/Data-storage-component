@@ -1,0 +1,52 @@
+:root {
+  /* Colors */
+  --clr-primary: #3e7c59;
+  --clr-text: #2e2e2e;
+  --clr-background: #fafaf4;
+
+  --clr-white: hsl(0, 100%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-grey: hsl(0, 0, 59%);
+
+  --clr-blue-950: hsl(229, 57%, 11%);
+  --clr-blue-900: hsl(224, 61%, 15%);
+  --clr-blue-850: hsl(228, 56%, 26%);
+  --clr-blue-600: hsl(228, 55%, 62%);
+  --clr-blue-200: hsl(243, 100%, 93%);
+  /* Gradiants */
+
+  --gradient-1: linear-gradient(135deg, hsl(228, 56%, 26%), hsl(229, 57%, 11%));
+  --gradient-2: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+
+  /* Spacing */
+
+  --spacing-700: 3.5rem;
+  --spacing-500: 2.5rem;
+  --spacing-400: 2rem;
+  --spacing-300: 1.5rem;
+  --spacing-200: 1rem;
+  --spacing-100: 0.5rem;
+  --spacing-0: 0rem;
+
+  /* Typography */
+
+  /* ----> Here  */
+  --ff-sans: "Raleway", sans-serif;
+
+  --fs-200: 0.75rem;
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-700: 2.5rem;
+
+  --fw-400: 400;
+  --fw-700: 700;
+  --fw-800: 800;
+
+  /* Misc */
+  --radius-sm: 0.625rem;
+  --radius-lg: 6.25rem;
+}

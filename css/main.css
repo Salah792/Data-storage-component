@@ -1,0 +1,199 @@
+@import url("base/reset.css");
+@import url("base/root.css");
+@import url("base/typography.css");
+
+@import url("layout/container.css");
+@import url("layout/flex.css");
+@import url("layout/grid.css");
+
+@import url("utilities/display.css");
+@import url("utilities/spacing.css");
+@import url("utilities/text.css");
+@import url("utilities/colors.css");
+
+@import url("components/buttons.css");
+@import url("components/cards.css");
+@import url("components/forms.css");
+
+/* Body */
+body {
+  background-image: url("/images/bg-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+/* Card  */
+.card--storage-card {
+  flex-direction: column;
+}
+
+/* Card hreader  */
+.card__header {
+  border-start-end-radius: var(--radius-lg);
+}
+.card__header > * {
+  max-width: 72%;
+}
+.card_incons-container {
+  width: 100%;
+}
+.card_icon {
+  padding: 0.75rem;
+  background-color: var(--clr-blue-950);
+  border-radius: var(--radius-sm);
+}
+
+.card_storage-used {
+  text-align: center;
+}
+.card__content {
+  position: relative;
+}
+
+.progress-bar {
+  width: 100%;
+}
+progress {
+  /* 1. Reset the native browser styling first */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: var(--clr-blue-900);
+  border-radius: var(--radius-sm);
+  padding: 3px;
+  height: 1.25rem;
+}
+.progress-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+}
+
+/* For Chrome, Safari, and newer Edge browsers */
+progress::-webkit-progress-value {
+  background: var(--gradient-2);
+  border-radius: var(--radius-sm);
+}
+
+/* For Firefox  */
+
+progress::-moz-progress-bar {
+  background: var(--gradient-2);
+  border-radius: var(--radius-sm);
+}
+
+/* For older Internet Explorer/Edge (Standard property) */
+progress {
+  /* background: var(--gradient-2); */
+  border-radius: var(--radius-sm);
+}
+.progress-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  /* Positions the center of the circle exactly at the progress percentage */
+  left: var(--progress);
+  transform: translate(-150%, -50%);
+  /* transform: translateY(-50%); */
+
+  /* Circle styling */
+  width: 0.62rem;
+  height: 0.62rem;
+  background-color: var(--clr-white);
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  pointer-events: none; /* Prevents interference with clicks */
+  z-index: 2;
+}
+
+.card_progress-bar-borders p {
+  font-weight: var(--fw-800);
+}
+
+.card_space-left {
+  background-color: var(--clr-white);
+  color: var(--clr-blue-950);
+  padding: var(--spacing-200) var(--spacing-300);
+  font-weight: var(--fw-700);
+  font-size: var(--fs-200);
+  border-radius: var(--radius-sm);
+  min-width: max(11rem, 60%);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.card_space-left span {
+  font-size: var(--fs-700);
+  vertical-align: middle;
+  color: var(--clr-blue-950);
+}
+
+/* Media querie  */
+/* Tbalet  */
+@media (min-width: 48rem) {
+  body {
+    background-image: url("/images/bg-desktop.png");
+    background-color: var(--clr-blue-950);
+    background-repeat: no-repeat;
+    background-position: left 9.75rem bottom -5rem;
+    background-size: auto;
+    background-attachment: fixed;
+  }
+  .card--storage-card {
+    width: min(33.75rem, 70vw);
+  }
+  .card__content {
+    width: 100%;
+  }
+  .card_space-left {
+    min-width: 11.5rem;
+  }
+  .card__content .card_storage-used {
+    text-align: left;
+  }
+}
+
+/* Desktop  */
+
+@media (min-width: 75rem) {
+  body {
+    background-color: var(--clr-blue-950);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100% calc(50% + 3rem);
+    background-attachment: fixed;
+  }
+  .card--storage-card {
+    flex-direction: row;
+    gap: var(--spacing-400);
+    width: 57.62rem;
+  }
+  .card__header {
+    width: 30rem;
+  }
+  .card_space-left {
+    bottom: auto;
+    left: auto;
+    top: -1rem;
+    right: 2.5rem;
+    transform: translate(0, -50%);
+    border-bottom-right-radius: 0;
+  }
+  .card_space-left::after {
+    content: "";
+    position: absolute;
+    width: 1.4rem;
+    height: 1.4rem;
+    bottom: 1px;
+    right: 0;
+    transform: translateY(100%);
+    background-color: var(--clr-white);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+  }
+}

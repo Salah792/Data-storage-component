@@ -1,0 +1,14 @@
+body {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-400);
+  color: var(--clr-blue-200);
+  line-height: 1.15;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+}
