@@ -2,7 +2,7 @@
 @import url("base/root.css");
 @import url("base/typography.css");
 
-@import url("layout/container.css");
+@import url("layout/containers.css");
 @import url("layout/flex.css");
 @import url("layout/grid.css");
 
@@ -37,7 +37,7 @@ body {
 .card__header > * {
   max-width: 72%;
 }
-.card_incons-container {
+.card_icons-container {
   width: 100%;
 }
 .card_icon {

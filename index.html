@@ -25,47 +25,52 @@
     <title>Storage Card</title>
   </head>
   <body class="flex justify-center items-center">
-    <header></header>
-    <section class="card_container">
-      <div class="cards-group card--storage-card flow-content--sm flex">
-        <div
-          class="card card__header flow-content flex flex-column justify-center items-start"
-        >
-          <div class="card__brand-container">
-            <img src="./images/logo.svg" alt="Company Logo" />
-          </div>
-          <div class="card_incons-container flex justify-between">
-            <div class="card_icon flex justify-center items-center">
-              <img src="./images/icon-document.svg" alt="" />
+    <main>
+      <section class="card_container">
+        <div class="cards-group card--storage-card flow-content--sm flex">
+          <div
+            class="card card__header flow-content flex flex-column justify-center items-start"
+          >
+            <div class="card__brand-container">
+              <img src="./images/logo.svg" alt="Company Logo" />
             </div>
-            <div class="card_icon flex justify-center items-center">
-              <img src="./images/icon-folder.svg" alt="" />
-            </div>
-            <div class="card_icon flex justify-center items-center">
-              <img src="./images/icon-upload.svg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="card card__content flow-content--sm">
-          <p class="card_storage-used">You’ve used 815 GB of your storage</p>
-          <div class="progress-bar-group flow-content--mini mb-1">
-            <div class="progress-container" style="--progress: 81.5%">
-              <progress class="progress-bar" value="815" max="1000">
-                81.5%
-              </progress>
-            </div>
-            <div class="flex card_progress-bar-borders justify-between">
-              <p>0 GB</p>
-              <p>1000 GB</p>
+            <div class="card_icons-container flex justify-between">
+              <div class="card_icon flex justify-center items-center">
+                <img src="./images/icon-document.svg" alt="" />
+              </div>
+              <div class="card_icon flex justify-center items-center">
+                <img src="./images/icon-folder.svg" alt="" />
+              </div>
+              <div class="card_icon flex justify-center items-center">
+                <img src="./images/icon-upload.svg" alt="" />
+              </div>
             </div>
           </div>
+          <div class="card card__content flow-content--sm">
+            <p class="card_storage-used">You’ve used 815 GB of your storage</p>
+            <div class="progress-bar-group flow-content--mini mb-1">
+              <div class="progress-container" style="--progress: 81.5%">
+                <progress
+                  class="progress-bar"
+                  value="815"
+                  max="1000"
+                  aria-label="Storage progress"
+                >
+                  81.5%
+                </progress>
+              </div>
+              <div class="flex card_progress-bar-borders justify-between">
+                <p>0 GB</p>
+                <p>1000 GB</p>
+              </div>
+            </div>
 
-          <div class="card_space-left flex items-center justify-center">
-            <p><span>185</span> GB LEFT</p>
+            <div class="card_space-left flex items-center justify-center">
+              <p><span>185</span> GB LEFT</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <footer></footer>
+      </section>
+    </main>
   </body>
 </html>
