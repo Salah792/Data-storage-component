@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://www.frontendmentor.io/solutions/data-storage-component-html-css-lYkzl--uCK)
-- Live Site URL: [](https://data-storage-component67.netlify.app/)
+- Solution URL: [View Solution](https://www.frontendmentor.io/solutions/data-storage-component-html-css-lYkzl--uCK)
+- Live Site URL: [View Live Site](https://data-storage-component67.netlify.app/)
 
 ## My process
 
